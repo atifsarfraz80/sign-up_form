@@ -124,8 +124,8 @@ html,body{
     border: 1px solid #e5e7eb;
     border-radius: 4px;
     font-size: 16px;
-    outline: none;
-    
+    outline: none;   
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 
@@ -133,9 +133,24 @@ html,body{
     border-color: #b91c1c; 
 }
 
-.pass:user-invalid{
-    border: 1px solid red;
+.input-group input:user-invalid {
+    border: 2px solid #ff4d4d;
+    background-color: #fff5f5;
 }
+
+input[type="password"]:user-valid {
+  border: 2px solid #2ecc71;
+  background-color: #f4fbf7;
+}
+
+
+.input-group input:focus {
+    border: 2px solid #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+    background-color: white; 
+}
+
+
 
 .account{
     display: flex;
@@ -163,11 +178,11 @@ html,body{
 }
 
 .account-button:hover {
-    background-color: #4a5a37; /* Slightly darker on hover */
+    background-color: #4a5a37; 
 }
 
 .account-button:active {
-    transform: translateY(1px); /* Subtle press effect */
+    transform: translateY(1px); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -188,18 +203,5 @@ html,body{
     text-decoration: underline;
 }
 
-input[type="password"]:invalid{
-    border: 2px solid #ff4d4d;
-    background-color: #fff5f5;
-    outline: none;
-}
 
-input[type="password"]:valid {
-  border: 2px solid #2ecc71;
-  background-color: #f4fbf7;
-}
 
-input:focus{
-    border: 1px solid blue;
-    box-shadow: #fff5f5;
-}
