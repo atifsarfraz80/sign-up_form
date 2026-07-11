@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Myfont';
+    src:    url(Norsebold.otf);
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -9,16 +15,191 @@ html,body{
 }
 
 .main-container {
-    height: 100vh; 
+    min-height: 100vh; 
     width: 100%;
     display: flex;
 }
 
-.background {
+.left-container {
     background-image: url("messi.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+}
+
+.logo{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    padding: 15px 0;
+}
+
+.logo-image{
+    height: 60px;
+    width: auto;
+}
+
+.logo-text{
+    color: white;
+    font-family: 'Myfont' , sans-serif;
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+
+.right-container {
+    width: 70%; 
+    background-color: #f9f9f9; 
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    padding: 20px 50px 50px 50px;
+    max-width: 80%;
+}
+
+.right-text{
+    font-family: 'Inter',sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0; 
+}
+
+.main-quote {
+    margin-bottom: 25px; 
+}
+
+.sub-quote {
+    margin-bottom: 0; 
+}
+
+.form-container{
+    padding: 0 50px;
+    background-color: white;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-heading-text{
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 22px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; 
+    flex: 1;  
+}
+
+.input-group label {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4b5563;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    
+}
+
+
+.input-group input.error-border {
+    border-color: #b91c1c; 
+}
+
+.pass:user-invalid{
+    border: 1px solid red;
+}
+
+.account{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+
+.account-button{
+    background-color: #596B43;
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.account-button:hover {
+    background-color: #4a5a37; /* Slightly darker on hover */
+}
+
+.account-button:active {
+    transform: translateY(1px); /* Subtle press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.login-prompt {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #1f2937;
+    margin: 0;
+}
+
+.login-prompt a {
+    color: #596B43;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
+
+input[type="password"]:invalid{
+    border: 2px solid #ff4d4d;
+    background-color: #fff5f5;
+    outline: none;
+}
+
+input[type="password"]:valid {
+  border: 2px solid #2ecc71;
+  background-color: #f4fbf7;
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: #fff5f5;
 }

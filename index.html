@@ -9,7 +9,65 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="background"></div>
-    </div>
+        <div class="left-container">
+            <div class="logo">
+                <img src="odin.png" alt="odin-logo" class="logo-image">
+                <span class="logo-text">ODIN</span>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="text">
+            <p class="right-text main-quote">This is MESSI'S service! You know you need something like this in your life to help you realize your biggest dreams. Sign up now to get started.</p>
+            <p class="right-text sub-quote">You <em>know</em> you want to.</p>
+            </div>
+
+        <form action="">
+        <div class="form-container">
+                <div class="form-heading">
+                    <p class="form-heading-text">Let's do this!</p>
+                </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" maxlength="50" minlength="1">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="last-name" >Last Name</label>
+                            <input type="text" id="last-name" name="last-name" maxlength="50" minlength="1">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" maxlength="50" minlength="1">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone" >Phone Number</label>
+                            <input type="text" id="phone" name="phone" minlength="11" maxlength="11">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group ">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" maxlength="50" minlength="8" required placeholder=" ">
+                        </div>
+
+                        <div class="input-group ">
+                            <label for="confirm" >Confirm Password</label>
+                            <input type="password" id="confirm" name="confirm" maxlength="50" minlength="8"  required placeholder=" ">
+                        </div>
+                    </div>
+        </div>
+        </form>
+            <div class="account">
+                <button class="account-button">Create Account</button>
+                <p class="login-prompt">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
 </body>
 </html>
